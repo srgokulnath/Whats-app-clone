@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+
 } from "react-router-dom";
 import Login from './Login';
 import { useStateValue } from './StateProvider';
@@ -15,7 +15,7 @@ import { useStateValue } from './StateProvider';
 
 function App() {
 
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   return (
     //BEM naming convention
     <div className="app">
